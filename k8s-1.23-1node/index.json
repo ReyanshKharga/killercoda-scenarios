@@ -1,0 +1,22 @@
+{
+  "title": "Kubernetes 1-node",
+  "description": "Use a simple one-node Kubernetes cluster and let the user list all pods",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "List all pods",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node",
+    "k8s_version": "1.23"
+  }
+}
