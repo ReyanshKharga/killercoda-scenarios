@@ -16,7 +16,7 @@
     }
   },
   "backend": {
-    "imageid": "kubernetes-cluster-running:1.23",
+    "imageid": "kubernetes-cluster-running:1.21",
     "k8s_version": "1.23"
   }
 }
