@@ -1,2 +1,2 @@
 
-Run `k get pod -A`{{exec}} 
+Run `k get pod -A`{{exec}}
