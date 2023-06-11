@@ -1,5 +1,5 @@
 {
-  "title": "Kubernetes 1.23",
+  "title": "Kubernetes - List Pods",
   "description": "Use a simple one-node Kubernetes cluster and let the user list all pods",
   "details": {
     "intro": {
@@ -16,7 +16,6 @@
     }
   },
   "backend": {
-    "imageid": "kubernetes-cluster-running:1.21",
-    "k8s_version": "1.23"
+    "imageid": "kubernetes-cluster-running:1.21"
   }
 }
