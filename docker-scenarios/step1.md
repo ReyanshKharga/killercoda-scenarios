@@ -33,6 +33,7 @@ docker logs -f my-nginx-container
 **Step 4: Exit**
 
 ```
+^C
 ```{{exec interrupt}}
 <br>
 
