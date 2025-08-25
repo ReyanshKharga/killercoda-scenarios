@@ -52,12 +52,27 @@ docker stop my-nginx-container
 
 
 <br>
+List all containers and verify if the container is stopped:
+
+```
+docker ps -a
+```{{exec}}
+
+
+<br>
 Start the container:
 
 ```
 docker start my-nginx-container
 ```{{exec}}
 
+
+<br>
+List all containers and verify if the container is started:
+
+```
+docker ps -a
+```{{exec}}
 
 <br>
 Delete the container:
