@@ -3,6 +3,7 @@
 ```
 kubectl run my-pod --image=nginx
 ```{{exec}}
+Wait until the Pod reaches the Running state.
 <br>
 
 
