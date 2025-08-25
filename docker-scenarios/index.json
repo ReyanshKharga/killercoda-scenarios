@@ -11,7 +11,7 @@
         "text": "step1.md"
       },
       {
-        "title": "Create a Docker image and run container",
+        "title": "Build a Docker image and launch a container from it",
         "text": "step2.md"
       }
     ]
