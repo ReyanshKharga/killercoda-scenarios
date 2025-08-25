@@ -7,7 +7,7 @@
     },
     "steps": [
       {
-        "title": "Create a Pod",
+        "title": "Create a Pod using imperative approach",
         "text": "step1.md"
       }
     ],

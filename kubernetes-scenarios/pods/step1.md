@@ -1,64 +1,69 @@
+**Step 1: Create a Pod using imperative approach:**
 
-Run `kubectl get pods -A`{{exec}}
-
-
-> Services need to run on all interfaces (like 0.0.0.0) and not just localhost.
+```
+kubectl run my-pod --image=nginx
+```{{exec}}
 <br>
-> Services need to be accessible via HTTP and **not** HTTPS.
-
-Install the customised K8s Dashboard YAML:
-
-```plain
-kubectl apply -f /root/dashboard.yaml
-kubectl -n kubernetes-dashboard wait --for=condition=ready pod --all
-```{{exec}}
 
 
-The modifications here were these arguments:
+**Step 2: List Pods:**
 
-```yaml
-args:
-- --namespace=kubernetes-dashboard
-- --enable-skip-login
-- --disable-settings-authorizer
-- --enable-insecure-login
-- --insecure-bind-address=0.0.0.0
 ```
+kubectl get pods
+```{{exec}}
+<br>
 
-and an updated service YAML:
 
-```yaml{10,11}
-kind: Service
-apiVersion: v1
-metadata:
-  labels:
-    k8s-app: kubernetes-dashboard
-  name: kubernetes-dashboard
-  namespace: kubernetes-dashboard
-spec:
-  ports:
-    - port: 9090
-      targetPort: 9090
-  selector:
-    k8s-app: kubernetes-dashboard
+**Step 3: List Pods with wide output:**
+
 ```
-
-> You can only see resources in the dashboard depending on the token permissions: [more](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md)
-
-Create a ServiceAccount and use the token:
-
-```plain
-kubectl -n kubernetes-dashboard create sa admin-user
-kubectl create clusterrolebinding admin-user --clusterrole cluster-admin --serviceaccount kubernetes-dashboard:admin-user
-kubectl -n kubernetes-dashboard create token admin-user
+kubectl get pods -o wide
 ```{{exec}}
+<br>
 
-Next we need to run port-forward:
 
-```plain
-kubectl -n kubernetes-dashboard port-forward service/kubernetes-dashboard 9090:9090 --address 0.0.0.0
+**Step 4: Describe the Pod:**
+
+```
+kubectl describe pod my-pod
 ```{{exec}}
+<br>
 
-Now use the printed token in the terminal to log into:
 
-[ACCESS DASHBOARD]({{TRAFFIC_HOST1_9090}}) or [ACCESS PORTS]({{TRAFFIC_SELECTOR}})
+**Step 5: Start a shell session inside the container:**
+
+```
+kubectl exec -it my-pod -- bash
+```{{exec}}
+<br>
+
+
+**Step 5: Run commands:**
+
+1. List files and folders:
+```
+ls
+```{{exec}}
+<br>
+
+2. Access nginx running on port 80:
+```
+curl localhost
+```{{exec}}
+<br>
+
+
+**Step 6: View container logs:**
+
+```
+kubectl logs my-pod
+```{{exec}}
+<br>
+
+
+**Step 6: Delete Pod:**
+
+```
+kubectl delete pod my-pod
+```{{exec}}
+<br>
