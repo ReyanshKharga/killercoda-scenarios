@@ -21,3 +21,18 @@ cat <<EOF > index.html
 </html>
 EOF
 ```{{exec}}
+
+
+```yaml
+cat <<EOF > 01-basic.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-basic
+spec:
+  containers:
+    - name: busybox
+      image: busybox
+      command: ["echo", "Hello from Pod!"]
+EOF
+```{{exec}}
