@@ -2,7 +2,7 @@
   "title": "Scenarios by Reyansh Kharga",
   "description": "Practical scenarios for learning Docker and Kubernetes",
   "items": [
-    { "path": "kubernetes-scenarios" },
-    { "path": "docker-scenarios" }
+    { "path": "docker-scenarios" },
+    { "path": "kubernetes-scenarios" }
   ]
 }
