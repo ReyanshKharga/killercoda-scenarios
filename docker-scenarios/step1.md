@@ -15,6 +15,14 @@ docker run -d --name my-nginx-container -p 80:80 nginx:latest
 
 
 <br>
+List running containers:
+
+```
+docker ps
+```{{exec}}
+
+
+<br>
 Now access Nginx using this link:
 
 [ACCESS NGINX]({{TRAFFIC_HOST1_80}})
@@ -32,4 +40,28 @@ It's also possible to generate access URLs in bash (foreground or background scr
 
 ```
 sed 's/PORT/80/g' /etc/killercoda/host
+```{{exec}}
+
+
+<br>
+Stop the container:
+
+```
+docker stop my-nginx-container
+```{{exec}}
+
+
+<br>
+Start the container:
+
+```
+docker start my-nginx-container
+```{{exec}}
+
+
+<br>
+Delete the container:
+
+```
+docker rm my-nginx-container
 ```{{exec}}
