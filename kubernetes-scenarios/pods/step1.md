@@ -41,19 +41,27 @@ kubectl exec -it my-pod -- bash
 **Step 5: Run commands:**
 
 1. List files and folders:
-```
-ls
-```{{exec}}
+  ```
+  ls
+  ```{{exec}}
 <br>
 
 2. Access nginx running on port 80:
-```
-curl localhost
-```{{exec}}
+  ```
+  curl localhost
+  ```{{exec}}
 <br>
 
 
-**Step 6: View container logs:**
+**Step 6: Exit from Pod**
+
+```
+^C
+```{{exec interrupt}}
+<br>
+
+
+**Step 7: View container logs:**
 
 ```
 kubectl logs my-pod
@@ -61,7 +69,7 @@ kubectl logs my-pod
 <br>
 
 
-**Step 6: Delete Pod:**
+**Step 8: Delete Pod:**
 
 ```
 kubectl delete pod my-pod
