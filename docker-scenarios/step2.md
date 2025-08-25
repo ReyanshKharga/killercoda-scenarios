@@ -1,19 +1,23 @@
+Create a Docker image and run container.
 
-> Services need to run on all interfaces (like 0.0.0.0) and not just localhost.
+Let's see how you can create your own Docker image based on your requirements. In this tutorial, we will create a customized version of the Nginx image that serves an HTML page we want.
+
+> **Key Point:**  
+> By default, nginx serves the index.html file present in /usr/share/nginx/html directory. You can verify this by checking the content of /etc/nginx/conf.d/default.conf
+
+> We'll replace the default index.html with our index.html file.
+
 <br>
-> Services need to be accessible via HTTP and **not** HTTPS.
-
-Expose Apache on port 1234 using Docker:
-
+```html
+cat <<EOF > index.html
+<!doctype html>
+<html>
+    <head>
+        <title>Nginx</title>
+    </head>
+    <body>
+        <h2>Hello from Nginx container</h2>
+    </body>
+</html>
+EOF
 ```
-docker run -d -p 1234:80 httpd:alpine
-```{{exec}}
-
-Now access Apache using this link:
-
-[ACCESS APACHE]({{TRAFFIC_HOST1_1234}})
-
-It's also possible to access ports using the top-right navigation in the terminal.
-Or we can display the link to that page:
-
-[ACCESS PORTS]({{TRAFFIC_SELECTOR}})
