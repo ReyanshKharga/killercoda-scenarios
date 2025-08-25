@@ -13,12 +13,14 @@ docker run -d --name my-nginx-container -p 80:80 nginx:latest
 ```{{exec}}
 <br>
 
+
 **Step 2: List running containers:**
 
 ```
 docker ps
 ```{{exec}}
 <br>
+
 
 **Step 3: Start a shell session inside the container:**
 
@@ -27,12 +29,14 @@ docker exec -it my-nginx-container bash
 ```{{exec}}
 <br>
 
+
 **Step 4: Access the localhost endpoint:**
 
 ```
 curl localhost
 ```{{exec}}
 <br>
+
 
 **Step 5: Exit from the container:**
 
@@ -41,12 +45,14 @@ exit
 ```{{exec}}
 <br>
 
+
 **Step 6: Stop the container:**
 
 ```
 docker stop my-nginx-container
 ```{{exec}}
 <br>
+
 
 **Step 7: List all containers and verify if the container is stopped:**
 
@@ -55,12 +61,14 @@ docker ps -a
 ```{{exec}}
 <br>
 
+
 **Step 8: Start the container:**
 
 ```
 docker start my-nginx-container
 ```{{exec}}
 <br>
+
 
 **Step 9: List all containers and verify if the container is started:**
 
