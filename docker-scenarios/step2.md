@@ -16,7 +16,7 @@ cat <<EOF > index.html
         <title>Nginx</title>
     </head>
     <body>
-        <h2>Hello from Nginx container</h2>
+        <h2>Hello from Nginx container1</h2>
     </body>
 </html>
 EOF
