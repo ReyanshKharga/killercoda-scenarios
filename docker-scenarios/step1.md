@@ -5,7 +5,7 @@ Run Docker container from a public Docker image.
 > 2. Use `--name` to assign a custom name to the container.  
 > 3. Use `-p` to map a container port to a host port.
 
-<br>
+
 Step 1: Run nginx container in detached mode:
 
 ```
@@ -26,7 +26,7 @@ Step 3: Start a shell session inside the container:
 docker exec -it my-nginx-container bash
 ```{{exec}}
 
-<br>
+
 Step 4: Access the localhost endpoint:
 
 ```
