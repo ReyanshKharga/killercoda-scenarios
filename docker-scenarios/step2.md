@@ -8,10 +8,10 @@ Let's see how you can create your own Docker image based on your requirements. I
 
 <br>
 
-Let's crate the file: 
+Step 1: Create HTML file to be served by Nginx:
 
 ```yaml
-cat <<EOF > 01-basic.yaml
+cat <<EOF > index.html
 <!doctype html>
 <html>
     <head>
@@ -25,18 +25,37 @@ EOF
 ```{{exec}}
 
 
-Next, let's cratea a pod:
+Step 2: Create Dockerfile:
 
 ```yaml
-cat <<EOF > 01-basic.yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: pod-basic
-spec:
-  containers:
-    - name: busybox
-      image: busybox
-      command: ["echo", "Hello from Pod!"]
+cat <<EOF > Dockerfile
+FROM nginx:latest
+
+COPY ./index.html /usr/share/nginx/html/index.html
 EOF
+```{{exec}}
+
+Step 3: Build the Image
+
+```
+docker build -t my-nginx-image:v1 .
+```{{exec}}
+
+
+Step 4: Run a container from the image:
+
+```
+docker run -d --name my-nginx-container -p 81:80 my-nginx-image:v1
+```{{exec}}
+
+Step 5: Start a shell session inside the container:
+
+```
+docker exec -it my-nginx-container bash
+```{{exec}}
+
+Step 6: Access the localhost endpoint:
+
+```
+curl localhost
 ```{{exec}}
