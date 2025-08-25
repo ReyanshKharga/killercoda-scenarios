@@ -5,71 +5,74 @@ Run Docker container from a public Docker image.
 > 2. Use `--name` to assign a custom name to the container.  
 > 3. Use `-p` to map a container port to a host port.
 
-
-Run nginx container in detached mode:
+<br>
+Step 1: Run nginx container in detached mode:
 
 ```
 docker run -d --name my-nginx-container -p 80:80 nginx:latest
 ```{{exec}}
 
-
-List running containers:
+<br>
+Step 2: List running containers:
 
 ```
 docker ps
 ```{{exec}}
 
-
-Start a shell session inside the container:
+<br>
+Step 3: Start a shell session inside the container:
 
 ```
 docker exec -it my-nginx-container bash
 ```{{exec}}
 
-
-Access the localhost endpoint:
+<br>
+Step 4: Access the localhost endpoint:
 
 ```
 curl localhost
 ```{{exec}}
 
-
-exit from the container:
+<br>
+Step 5: Exit from the container:
 
 ```
 exit
 ```{{exec}}
 
 
-Stop the container:
+<br>
+Step 6: Stop the container:
 
 ```
 docker stop my-nginx-container
 ```{{exec}}
 
 
-
-List all containers and verify if the container is stopped:
+<br>
+Step 7: List all containers and verify if the container is stopped:
 
 ```
 docker ps -a
 ```{{exec}}
 
-
-Start the container:
+<br>
+Step 8: Start the container:
 
 ```
 docker start my-nginx-container
 ```{{exec}}
 
-
-List all containers and verify if the container is started:
+<br>
+Step 9: List all containers and verify if the container is started:
 
 ```
 docker ps -a
 ```{{exec}}
 
-Stop and delete the container:
+
+<br>
+Step 10: Stop and delete the container:
 
 ```
 docker stop my-nginx-container
