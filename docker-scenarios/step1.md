@@ -1,19 +1,15 @@
+Run Docker container from a public Docker image.
 
-> **Important Points:**
-> 1. You can use `--detach` or `-d` option to run container in background.  
-> 2. You can use `--name` option to assign a desired name to the container.  
+> **Key Points:**  
+> 1. Use `--detach` or `-d` to run a container in the background.  
+> 2. Use `--name` to assign a custom name to the container.  
+> 3. Use `-p` to map a container port to a host port.
 <br>
+
 Run a container in detached mode.
 
 ```
-docker run -d --name my-nginx-container nginx:latest
-```{{exec}}
-
-
-Or run it in background:
-
-```
-docker run -d -p 80:80 nginx:alpine
+docker run -d --name my-nginx-container -p 80:80 nginx:latest
 ```{{exec}}
 
 Now access Nginx using this link:
