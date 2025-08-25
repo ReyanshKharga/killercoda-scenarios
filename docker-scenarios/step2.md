@@ -7,6 +7,7 @@ Let's see how you can create your own Docker image based on your requirements. I
 > 2. We'll replace the default `index.html` with our `index.html` file.
 
 <br>
+````
 ```bash
 cat <<EOF > index.html
 <!doctype html>
@@ -19,7 +20,8 @@ cat <<EOF > index.html
     </body>
 </html>
 EOF
-```{{exec}}
+```
+````{{exec}}
 
 Next, let's cratea a pod:
 
