@@ -6,7 +6,7 @@ Run Docker container from a public Docker image.
 > 3. Use `-p` to map a container port to a host port.
 
 
-Step 1: Run nginx container in detached mode:
+**Step 1: Run nginx container in detached mode:**
 
 ```
 docker run -d --name my-nginx-container -p 80:80 nginx:latest
