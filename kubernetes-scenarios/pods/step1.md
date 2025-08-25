@@ -38,7 +38,7 @@ kubectl exec -it my-pod -- bash
 <br>
 
 
-**Step 5: Run commands:**
+**Step 6: Run commands:**
 
   1. List files and folders:<br>
     ```
@@ -49,10 +49,10 @@ kubectl exec -it my-pod -- bash
     ```
     curl localhost
     ```{{exec}}
-<br>
+    <br>
 
 
-**Step 6: Exit from container**
+**Step 7: Exit from container**
 
 ```
 exit
@@ -60,7 +60,7 @@ exit
 <br>
 
 
-**Step 7: View container logs:**
+**Step 8: View container logs:**
 
 ```
 kubectl logs my-pod
@@ -68,7 +68,7 @@ kubectl logs my-pod
 <br>
 
 
-**Step 8: Delete Pod:**
+**Step 9: Delete Pod:**
 
 ```
 kubectl delete pod my-pod
