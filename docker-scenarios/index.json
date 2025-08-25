@@ -11,7 +11,7 @@
         "text": "step1.md"
       },
       {
-        "title": "Run Apache and access default page",
+        "title": "Create a Docker image and run container",
         "text": "step2.md"
       }
     ]

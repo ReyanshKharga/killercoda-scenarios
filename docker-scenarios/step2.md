@@ -6,9 +6,8 @@ Let's see how you can create your own Docker image based on your requirements. I
 > 1. By default, nginx serves the index.html file present in `/usr/share/nginx/html` directory. You can verify this by checking the content of `/etc/nginx/conf.d/default.conf`
 > 2. We'll replace the default `index.html` with our `index.html` file.
 
-<br>
 
-Create HTML file to be served by Nginx:
+**Step 1: Create HTML file to be served by Nginx:**
 
 ```yaml
 cat <<EOF > index.html
@@ -23,9 +22,10 @@ cat <<EOF > index.html
 </html>
 EOF
 ```{{exec}}
+<br>
 
 
-Create Dockerfile:
+**Step 2: Create Dockerfile:**
 
 ```yaml
 cat <<EOF > Dockerfile
@@ -34,35 +34,42 @@ FROM nginx:latest
 COPY ./index.html /usr/share/nginx/html/index.html
 EOF
 ```{{exec}}
+<br>
 
 
-Verify if the files are created:
+**Verify if the files are created:**
 
 ```
 ls
 ```{{exec}}
+<br>
 
 
-Step 3: Build the Image
+**Step 3: Build the Image**
 
 ```
 docker build -t my-nginx-image:v1 .
 ```{{exec}}
+<br>
 
 
-Step 4: Run a container from the image:
+**Step 4: Run a container from the image:**
 
 ```
 docker run -d --name my-nginx-container -p 81:80 my-nginx-image:v1
 ```{{exec}}
+<br>
 
-Step 5: Start a shell session inside the container:
+
+**Step 5: Start a shell session inside the container:**
 
 ```
 docker exec -it my-nginx-container bash
 ```{{exec}}
+<br>
 
-Step 6: Access the localhost endpoint:
+
+**Step 6: Access the localhost endpoint:**
 
 ```
 curl localhost
