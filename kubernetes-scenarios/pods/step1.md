@@ -7,6 +7,7 @@ Wait until the Pod reaches the Running state.
 <br>
 
 
+
 **Step 2: List Pods:**
 
 ```
