@@ -7,7 +7,7 @@ Let's see how you can create your own Docker image based on your requirements. I
 > 2. We'll replace the default `index.html` with our `index.html` file.
 
 <br>
-```python
+```bash
 cat <<EOF > index.html
 <!doctype html>
 <html>
