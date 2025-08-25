@@ -23,23 +23,18 @@ docker ps
 
 
 <br>
-Now access Nginx using this link:
-
-[ACCESS NGINX]({{TRAFFIC_HOST1_80}})
-
-
-<br>
-It's also possible to access ports using the top-right navigation in the terminal.
-Or we can display the link to that page:
-
-[ACCESS PORTS]({{TRAFFIC_SELECTOR}})
-
-
-<br>
-It's also possible to generate access URLs in bash (foreground or background scripts) like this:
+Start a shell session inside the container:
 
 ```
-sed 's/PORT/80/g' /etc/killercoda/host
+docker exec -it my-nginx-container bash
+```{{exec}}
+
+
+<br>
+Access the localhost endpoint:
+
+```
+curl localhost
 ```{{exec}}
 
 

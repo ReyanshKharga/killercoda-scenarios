@@ -8,7 +8,7 @@ Let's see how you can create your own Docker image based on your requirements. I
 
 <br>
 
-Step 1: Create HTML file to be served by Nginx:
+Create HTML file to be served by Nginx:
 
 ```yaml
 cat <<EOF > index.html
@@ -25,7 +25,7 @@ EOF
 ```{{exec}}
 
 
-Step 2: Create Dockerfile:
+Create Dockerfile:
 
 ```yaml
 cat <<EOF > Dockerfile
@@ -34,6 +34,14 @@ FROM nginx:latest
 COPY ./index.html /usr/share/nginx/html/index.html
 EOF
 ```{{exec}}
+
+
+Verify if the files are created:
+
+```
+ls
+```{{exec}}
+
 
 Step 3: Build the Image
 
