@@ -10,10 +10,7 @@
         "title": "Create a Pod using imperative approach",
         "text": "step1.md"
       }
-    ],
-    "finish": {
-      "text": "finish.md"
-    }
+    ]
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
