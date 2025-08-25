@@ -10,17 +10,18 @@ Let's see how you can create your own Docker image based on your requirements. I
 
 Let's crate the file: 
 
-```
-> cat <<EOF > 01-basic.yaml
-> <!doctype html>
-> <html>
->     <head>
->         <title>Nginx</title>
->     </head>
->     <body>
->         <h2>Hello from Nginx container</h2>
->     </body>
-> </html>
+```Javascript
+cat <<EOF > 01-basic.yaml
+<!doctype html>
+<html>
+    <head>
+        <title>Nginx</title>
+    </head>
+    <body>
+        <h2>Hello from Nginx container</h2>
+    </body>
+</html>
+EOF
 ```{{exec}}
 
 
