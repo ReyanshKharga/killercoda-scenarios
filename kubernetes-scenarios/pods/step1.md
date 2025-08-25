@@ -40,12 +40,12 @@ kubectl exec -it my-pod -- bash
 
 **Step 5: Run commands:**
 
-  1. List files and folders:
+  1. List files and folders:<br>
     ```
     ls
     ```{{exec}}
 
-  2. Access nginx running on port 80:
+  2. Access nginx running on port 80:<br>
     ```
     curl localhost
     ```{{exec}}
