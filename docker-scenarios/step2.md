@@ -8,7 +8,17 @@ Let's see how you can create your own Docker image based on your requirements. I
 
 <br>
 ```text
-hello world
+```
+<!doctype html>
+<html>
+    <head>
+        <title>Nginx</title>
+    </head>
+    <body>
+        <h2>Hello from Nginx container</h2>
+    </body>
+</html>
+```
 ```{{exec}}
 
 
