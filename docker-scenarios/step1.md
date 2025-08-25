@@ -84,4 +84,3 @@ docker ps -a
 docker stop my-nginx-container
 docker rm my-nginx-container
 ```{{exec}}
-<br>
