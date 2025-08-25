@@ -2,6 +2,6 @@
   "title": "Kubernetes Scenarios",
   "description": "Practical scenarios to master Kubernetes",
   "items": [
-    { "path": "01-kubernetes-pods" }
+    { "path": "pods" }
   ]
 }

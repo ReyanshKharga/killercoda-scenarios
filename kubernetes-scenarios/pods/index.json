@@ -1,13 +1,13 @@
 {
-  "title": "Kubernetes - List Pods",
-  "description": "Use a simple one-node Kubernetes cluster and let the user list all pods",
+  "title": "Kubernetes Pod",
+  "description": "Create and manage Pods",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "title": "List all pods.",
+        "title": "Create a Pod",
         "text": "step1.md"
       }
     ],

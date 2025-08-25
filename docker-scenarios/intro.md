@@ -1,4 +1,7 @@
-Docker scenarios that includes the following:
+<br>
 
-1. Run Nginx container and access default page
-2. Build a Docker image and launch a container from it
+### Welcome !
+
+In this scenario we'll learn how to create and manage Docker containers.
+
+**HAVE FUN**

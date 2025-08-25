@@ -1,8 +1,0 @@
-{
-  "title": "Kubernetes Pods",
-  "description": "Practical Scenarios for Mastering Kubernetes Pods",
-  "items": [
-    { "path": "01-list-pods" },
-    { "path": "02-pod-with-labels" }
-  ]
-}
