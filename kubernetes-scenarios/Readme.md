@@ -1,1 +1,0 @@
-Scenarios for EKS Masterclass

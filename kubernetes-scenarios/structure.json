@@ -1,5 +1,5 @@
 {
-  "title": "Kubernetes Masterclass Scenarios",
+  "title": "Kubernetes Scenarios",
   "description": "Practical scenarios for mastering Kubernetes",
   "items": [
     { "path": "01-kubernetes-pods" }
