@@ -4,23 +4,30 @@ Run Docker container from a public Docker image.
 > 1. Use `--detach` or `-d` to run a container in the background.  
 > 2. Use `--name` to assign a custom name to the container.  
 > 3. Use `-p` to map a container port to a host port.
-<br>
 
-Run a container in detached mode.
+
+<br>
+Run nginx container in detached mode:
 
 ```
 docker run -d --name my-nginx-container -p 80:80 nginx:latest
 ```{{exec}}
 
+
+<br>
 Now access Nginx using this link:
 
 [ACCESS NGINX]({{TRAFFIC_HOST1_80}})
 
+
+<br>
 It's also possible to access ports using the top-right navigation in the terminal.
 Or we can display the link to that page:
 
 [ACCESS PORTS]({{TRAFFIC_SELECTOR}})
 
+
+<br>
 It's also possible to generate access URLs in bash (foreground or background scripts) like this:
 
 ```
