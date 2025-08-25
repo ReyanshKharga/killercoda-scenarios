@@ -1,6 +1,6 @@
 {
   "title": "Pod With Labels",
-  "description": "Access services running inside an environment",
+  "description": "Use Pod labels to select Pods",
   "details": {
     "intro": {
       "text": "intro.md"
