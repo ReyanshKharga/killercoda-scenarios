@@ -8,7 +8,7 @@ Let's see how you can create your own Docker image based on your requirements. I
 > We'll replace the default index.html with our index.html file.
 
 <br>
-```
+```html
 cat <<EOF > index.html
 <!doctype html>
 <html>
@@ -20,4 +20,4 @@ cat <<EOF > index.html
     </body>
 </html>
 EOF
-```
+```{{exec}}
