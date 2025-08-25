@@ -1,5 +1,3 @@
-Create a Docker image and run container.
-
 Let's see how you can create your own Docker image based on your requirements. In this tutorial, we will create a customized version of the Nginx image that serves an HTML page we want.
 
 > **Key Point:**  
@@ -73,4 +71,13 @@ docker exec -it my-nginx-container bash
 
 ```
 curl localhost
+```{{exec}}
+<br>
+
+
+**Step 7: Stop and delete the container:**
+
+```
+docker stop my-nginx-container
+docker rm my-nginx-container
 ```{{exec}}
