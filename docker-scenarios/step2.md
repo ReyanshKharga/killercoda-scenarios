@@ -9,7 +9,6 @@ Let's see how you can create your own Docker image based on your requirements. I
 <br>
 ```text
 cat <<EOF > index.html
-`<!doctype html>`
 <html>
     <head>
         <title>Nginx</title>
