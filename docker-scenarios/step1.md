@@ -22,7 +22,23 @@ docker ps
 <br>
 
 
-**Step 3: Start a shell session inside the container:**
+**Step 3: View Container Logs**
+
+```
+docker logs -f my-nginx-container
+```{{exec}}
+<br>
+
+
+**Step 4: Exit
+
+```
+^c
+```{{exec}}
+<br>
+
+
+**Step 5: Start a shell session inside the container:**
 
 ```
 docker exec -it my-nginx-container bash
@@ -30,7 +46,7 @@ docker exec -it my-nginx-container bash
 <br>
 
 
-**Step 4: Access the localhost endpoint:**
+**Step 6: Access the localhost endpoint:**
 
 ```
 curl localhost
@@ -38,7 +54,7 @@ curl localhost
 <br>
 
 
-**Step 5: Exit from the container:**
+**Step 7: Exit from the container:**
 
 ```
 exit
@@ -46,7 +62,7 @@ exit
 <br>
 
 
-**Step 6: Stop the container:**
+**Step 8: Stop the container:**
 
 ```
 docker stop my-nginx-container
@@ -54,7 +70,7 @@ docker stop my-nginx-container
 <br>
 
 
-**Step 7: List all containers and verify if the container is stopped:**
+**Step 9: List all containers and verify if the container is stopped:**
 
 ```
 docker ps -a
@@ -62,7 +78,7 @@ docker ps -a
 <br>
 
 
-**Step 8: Start the container:**
+**Step 10: Start the container:**
 
 ```
 docker start my-nginx-container
@@ -70,7 +86,7 @@ docker start my-nginx-container
 <br>
 
 
-**Step 9: List all containers and verify if the container is started:**
+**Step 11: List all containers and verify if the container is started:**
 
 ```
 docker ps -a
@@ -78,7 +94,7 @@ docker ps -a
 <br>
 
 
-**Step 10: Stop and delete the container:**
+**Step 12: Stop and delete the container:**
 
 ```
 docker stop my-nginx-container
