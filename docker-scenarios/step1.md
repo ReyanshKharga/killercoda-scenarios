@@ -7,7 +7,7 @@ Run Docker container from a public Docker image.
 
 <br>
 Step 1: Run nginx container in detached mode:
-
+<br>
 
 ```
 docker run -d --name my-nginx-container -p 80:80 nginx:latest
