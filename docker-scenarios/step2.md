@@ -10,7 +10,7 @@ Let's see how you can create your own Docker image based on your requirements. I
 
 Let's crate the file: 
 
-```Javascript
+```JSON
 cat <<EOF > 01-basic.yaml
 <!doctype html>
 <html>
