@@ -35,7 +35,7 @@ EOF
 <br>
 
 
-**Verify if the files are created:**
+**Step 3: Verify if the files are created:**
 
 ```
 ls
@@ -43,7 +43,7 @@ ls
 <br>
 
 
-**Step 3: Build the Image**
+**Step 4: Build the Image**
 
 ```
 docker build -t my-nginx-image:v1 .
@@ -51,7 +51,7 @@ docker build -t my-nginx-image:v1 .
 <br>
 
 
-**Step 4: Run a container from the image:**
+**Step 5: Run a container from the image:**
 
 ```
 docker run -d --name my-nginx-container -p 81:80 my-nginx-image:v1
@@ -59,7 +59,7 @@ docker run -d --name my-nginx-container -p 81:80 my-nginx-image:v1
 <br>
 
 
-**Step 5: Start a shell session inside the container:**
+**Step 6: Start a shell session inside the container:**
 
 ```
 docker exec -it my-nginx-container bash
@@ -67,7 +67,7 @@ docker exec -it my-nginx-container bash
 <br>
 
 
-**Step 6: Access the localhost endpoint:**
+**Step 7: Access the localhost endpoint:**
 
 ```
 curl localhost
@@ -75,7 +75,7 @@ curl localhost
 <br>
 
 
-**Step 7: Stop and delete the container:**
+**Step 8: Stop and delete the container:**
 
 ```
 docker stop my-nginx-container
