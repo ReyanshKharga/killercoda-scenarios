@@ -7,17 +7,16 @@ Let's see how you can create your own Docker image based on your requirements. I
 > 2. We'll replace the default `index.html` with our `index.html` file.
 
 <br>
-```html
-cat <<EOF > index.html
-&lt;!doctype html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Nginx&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h2&gt;Hello from Nginx container1&lt;/h2&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+cat <<'EOF' > index.html
+<!doctype html>
+<html>
+  <head>
+    <title>Nginx</title>
+  </head>
+  <body>
+    <h2>Hello from Nginx container1</h2>
+  </body>
+</html>
 EOF
 ```{{exec}}
 
