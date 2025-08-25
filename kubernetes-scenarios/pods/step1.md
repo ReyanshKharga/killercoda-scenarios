@@ -40,24 +40,24 @@ kubectl exec -it my-pod -- bash
 
 **Step 5: Run commands:**
 
-1. List files and folders:
+  1. List files and folders:
   ```
   ls
   ```{{exec}}
 <br>
 
-2. Access nginx running on port 80:
+  2. Access nginx running on port 80:
   ```
   curl localhost
   ```{{exec}}
 <br>
 
 
-**Step 6: Exit from Pod**
+**Step 6: Exit from container**
 
 ```
-^C
-```{{exec interrupt}}
+exit
+```{{exec}}
 <br>
 
 
