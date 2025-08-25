@@ -1,0 +1,7 @@
+{
+  "title": "Kubernetes Pods",
+  "description": "Practical Scenarios for Mastering Kubernetes Pods",
+  "items": [
+    { "path": "eks-masterclass-scenarios" }
+  ]
+}
