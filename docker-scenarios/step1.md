@@ -11,7 +11,7 @@ Step 1: Run nginx container in detached mode:
 ```
 docker run -d --name my-nginx-container -p 80:80 nginx:latest
 ```{{exec}}
-
+<br>
 
 Step 2: List running containers:
 
