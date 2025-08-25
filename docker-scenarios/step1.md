@@ -75,8 +75,9 @@ docker ps -a
 ```{{exec}}
 
 <br>
-Delete the container:
+Stop and delete the container:
 
 ```
+docker stop my-nginx-container
 docker rm my-nginx-container
 ```{{exec}}
