@@ -51,6 +51,7 @@ kubectl exec -it my-pod -- bash
     ```{{exec}}
 
 <br>
+
 **Step 7: Exit from container**
 
 ```
