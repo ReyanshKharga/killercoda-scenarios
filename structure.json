@@ -2,6 +2,7 @@
   "title": "Kubernetes Masterclass Scenarios",
   "description": "Practical scenarios for mastering Kubernetes",
   "items": [
+    { "path": "docker-scenarios" },
     { "path": "kubernetes-scenarios" }
   ]
 }
