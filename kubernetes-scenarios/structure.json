@@ -1,6 +1,6 @@
 {
-  "title": "Kubernetes Pods",
-  "description": "Practical Scenarios for Mastering Kubernetes Pods",
+  "title": "Kubernetes Masterclass Scenarios",
+  "description": "Practical scenarios for mastering Kubernetes",
   "items": [
     { "path": "01-kubernetes-pods" }
   ]

@@ -1,6 +1,6 @@
 {
-  "title": "Network Traffic",
-  "description": "Access services running inside an environment",
+  "title": "Docker Scenarios",
+  "description": "Practical scenarios to learn Docker",
   "details": {
     "intro": {
       "text": "intro.md"
